@@ -1,0 +1,18 @@
+1.
+-- Wybieramy dane o meczach, gdzie pierwszą drużyną jest EVG
+SELECT `zespol1`, `zespol2`,`wynik`,`data_rozgrywki` FROM `rozgrywka` WHERE `zespol1` = 'EVG';
+
+
+2.
+-- Pobieramy imię i nazwisko zawodnika o identyfikatorze 3
+SELECT `imie`,`nazwisko` FROM `zawodnik` WHERE `id` =3;
+
+3.
+-- Wybieramy identyfikator, nazwisko zawodnika oraz nazwę jego pozycji
+-- Dołączamy dane z tabeli pozycja poprzez relację zawodnik.pozycja_id = pozycja.id
+-- Filtrujemy wyniki dla zawodników o identyfikatorach 1, 2 lub 3
+SELECT zawodnik.id, zawodnik.nazwisko, pozycja.nazwa FROM `zawodnik` JOIN pozycja On zawodnik.pozycja_id = pozycja.id WHERE zawodnik.id = 1 or zawodnik.id = 2 or zawodnik.id = 3;
+
+4.
+-- Usuwamy tabelę liga z bazy danych (bez możliwości przywrócenia danych)
+DROP TABLE liga;

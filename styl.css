@@ -1,0 +1,63 @@
+/* Styl dla elementu nagłówka */
+header {
+    color: white; /* Kolor tekstu w nagłówku ustawiony na biały */
+    text-align: center; /* Wyrównanie tekstu do środka */
+    height: 370px; /* Wysokość nagłówka ustawiona na 370px */
+}
+
+/* Styl dla sekcji z identyfikatorem "mecze" */
+#mecze {
+    display: flex; /* Ustawienie elementów wewnątrz na model flexbox */
+    flex-direction: row; /* Elementy będą układane w jednym rzędzie */
+}
+
+/* Styl dla div-ów bezpośrednio wewnątrz sekcji "mecze" */
+#mecze > div {
+    color: white; /* Kolor tekstu w div-ach ustawiony na biały */
+    text-align: center; /* Wyrównanie tekstu w div-ach do środka */
+    width: 200px; /* Szerokość każdego div-a ustawiona na 200px */
+    margin: 10px; /* Margines wokół każdego div-a wynosi 10px */
+    border: 1px solid black; /* Obramowanie div-a: 1px, czarne, ciągłe */
+    border-radius: 10px; /* Zaokrąglenie rogów obramowania na 10px */
+}
+
+/* Styl dla div-ów w sekcji "mecze" po najechaniu myszką */
+#mecze > div:hover {
+    border: white; /* Zmiana koloru obramowania na biały po najechaniu */
+}
+
+/* Styl dla głównej sekcji */
+main {
+    background-color: whitesmoke; /* Kolor tła: jasny szary (whitesmoke) */
+    height: 50px; /* Wysokość sekcji głównej ustawiona na 50px */
+}
+
+/* Styl dla sekcji z identyfikatorem "lewy" */
+#lewy {
+    background-color: whitesmoke; /* Kolor tła: jasny szary */
+    width: 70%; /* Szerokość sekcji lewego bloku: 70% szerokości rodzica */
+    height: 230px; /* Wysokość sekcji lewego bloku: 230px */
+    float: left; /* Wyrównanie sekcji do lewej strony */
+}
+
+/* Styl dla sekcji z identyfikatorem "prawy" */
+#prawy {
+    background-color: whitesmoke; /* Kolor tła: jasny szary */
+    width: 30%; /* Szerokość sekcji prawego bloku: 30% szerokości rodzica */
+    height: 230px; /* Wysokość sekcji prawego bloku: 230px */
+    text-align: right; /* Wyrównanie tekstu do prawej */
+    float: left; /* Wyrównanie sekcji do lewej (obok lewej sekcji) */
+}
+
+/* Styl dla elementu body (całej strony) */
+body {
+    font-family: Tahoma; /* Ustawienie czcionki na Tahoma */
+    background-color: crimson; /* Kolor tła całej strony: karmazynowy (crimson) */
+}
+
+/* Styl dla nagłówków H2 */
+h2 {
+    text-align: center; /* Wyrównanie tekstu w nagłówkach do środka */
+    letter-spacing: 7px; /* Odstępy między literami ustawione na 7px */
+    text-transform: capitalize; /* Pierwsza litera każdego słowa wielka */
+}
